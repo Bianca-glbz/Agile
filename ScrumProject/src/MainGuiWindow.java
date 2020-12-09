@@ -1,11 +1,3 @@
-/////////////////////////////////////////////////////
-//	OOSD2 ASSIGNMENT 1
-//	Jenkin Yu
-//	C18712199
-//
-/////////////////////////////////////////////////////
-
-
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -64,7 +56,7 @@ public class MainGuiWindow extends JFrame
 			public void actionPerformed(ActionEvent e) {
 				ShoppingBasket basketframe = new ShoppingBasket();
 				basketframe.setTitle("");
-				basketframe.setSize(400, 400);
+				basketframe.setSize(755, 400);
 				basketframe.setVisible(true);
 				
 			}
@@ -103,3 +95,4 @@ public class MainGuiWindow extends JFrame
 		
 	}
 }
+
