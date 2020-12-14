@@ -2,8 +2,7 @@ public class Items {
 	
 	private String name;
 	private String type;
-	private int price;
-	private int exDate;
+	private String exDate;
 	private int quantity;
 	private String uniqueID;
 	
@@ -13,17 +12,15 @@ public class Items {
 		
 		this.name = "";
 		this.type = "";
-		this.price = 0;
-		this.exDate = 0;
+		this.exDate = "";
 		this.quantity = 0;
-		this.uniqueID = "";
+	    this.uniqueID = "";
 	}
 	
-	public Items (String n, String t, int p, int e, int q, String i)
+	public Items (String n, String t,  String e, int q, String i)
 	{
 		name = n;
 		type = t;
-		price = p;
 		exDate = e;
 		quantity = q;
 		uniqueID = i;
@@ -37,9 +34,12 @@ public class Items {
 		 return this.type;
 	 }
 	
-	public int getPrice(){
-		return this.price;
+	
+	
+	public String getExDate(){
+		return this.exDate;
 	}
+	
 	
 	public int getQuantity(){
 		return this.quantity;
@@ -55,10 +55,13 @@ public class Items {
 	
 	public void setType(String t){
 		this.type = t;
+	
+	
 	}
 	
-	public void setPrice(int p){
-		this.price = p;
+	public void setExDate(String e)
+	{
+		this.exDate = e;
 	}
 	
 	public void setQuantity(int q){
@@ -69,7 +72,11 @@ public class Items {
 		this.uniqueID = i;
 	}
 	
-
+   public String toString(){
+	   
+	   return "\n\nItem : " + name + "\nType: " + type + "\nexDate"+ exDate + "\nQuantity"+ quantity+ "\nUniqueID"+ uniqueID +"\n";
+   }
 }
+
 
 

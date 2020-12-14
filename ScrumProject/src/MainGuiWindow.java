@@ -5,6 +5,13 @@ import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.JFrame;
 
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import javax.swing.*;
+import javax.swing.JFrame;
+
 public class MainGuiWindow extends JFrame
 {
 	JFrame frame;
@@ -66,7 +73,7 @@ public class MainGuiWindow extends JFrame
 			public void actionPerformed(ActionEvent e) {
 				Calculator calculate = new Calculator();
 				calculate.setTitle("");
-				calculate.setSize(400, 400);
+				calculate.setSize(755, 400);
 				calculate.setVisible(true);
 			}
     	});
